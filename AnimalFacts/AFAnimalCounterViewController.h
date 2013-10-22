@@ -1,5 +1,5 @@
 //
-//  AFViewController.h
+//  AFAnimalCounterViewController.h
 //  AnimalFacts
 //
 //  Created by Jacob Good on 10/22/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AFViewController : UIViewController
+@interface AFAnimalCounterViewController : UIViewController
 
 @end

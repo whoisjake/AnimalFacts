@@ -7,12 +7,28 @@
 //
 
 #import "AFAppDelegate.h"
+#import "AFAnimalViewController.h"
+#import "AFAnimalListViewController.h"
+#import "AFAnimalCounterViewController.h"
 
 @implementation AFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    CGRect screenFrame = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame:screenFrame];
+    
+    AFAnimalListViewController * animalListController = [[AFAnimalListViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:animalListController];
+    
+    AFAnimalCounterViewController *animalCounterController = [[AFAnimalCounterViewController alloc] initWithNibName:nil bundle:nil];
+    
+    UITabBarController * tabController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+    tabController.viewControllers = @[navController,animalCounterController];
+    
+    self.window.rootViewController = tabController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
