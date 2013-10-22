@@ -13,4 +13,7 @@
 @property (nonatomic, strong) UIImage *animalImage;
 @property (nonatomic, strong) NSString *animalFact;
 
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UILabel *factLabel;
+
 @end

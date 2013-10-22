@@ -59,23 +59,23 @@
     AFAnimalViewController *animalViewController = [[AFAnimalViewController alloc] initWithNibName:nil bundle:nil];
     animalViewController.title = @"Dingo";
     animalViewController.animalFact = @"The dingo (Canis lupus dingo) is a free-roaming dog found mainly in Australia, as well as Southeast Asia, where it is said to have originated. It is currently classified as a subspecies of the grey wolf, Canis lupus.";
-    animalViewController.animalImage = [UIImage imageNamed:@"Dingo_walking"];
+    animalViewController.animalImage = [UIImage imageNamed:@"Dingo_walking.jpg"];
     [self.navigationController pushViewController:animalViewController animated:YES];
 }
 
 - (void)eagleButtonPressed:(id)sender {
     AFAnimalViewController *animalViewController = [[AFAnimalViewController alloc] initWithNibName:nil bundle:nil];
     animalViewController.title = @"Harpy Eagle";
-    animalViewController.animalFact = @"The Harpy Eagle (Harpia harpyja) is a Neotropical species of eagle. It is sometimes known as the American Harpy Eagle to distinguish it from the Papuan Eagle which is sometimes known as the New Guinea Harpy Eagle or Papuan Harpy Eagle.[3] It is the largest and most powerful raptor found in the Americas,[4] and among the largest extant species of eagles in the world.";
-    animalViewController.animalImage = [UIImage imageNamed:@"686px-Harpia_harpyja_-falconry_-head-8a"];
+    animalViewController.animalFact = @"The Harpy Eagle is a Neotropical species of eagle. It is sometimes known as the American Harpy Eagle to distinguish it from the Papuan Eagle which is sometimes known as the New Guinea Harpy Eagle.";
+    animalViewController.animalImage = [UIImage imageNamed:@"686px-Harpia_harpyja_-falconry_-head-8a.jpg"];
     [self.navigationController pushViewController:animalViewController animated:YES];
 }
 
 - (void)griffinButtonPressed:(id)sender {
     AFAnimalViewController *animalViewController = [[AFAnimalViewController alloc] initWithNibName:nil bundle:nil];
     animalViewController.title = @"Griffin";
-    animalViewController.animalFact = @"The griffin, griffon, or gryphon (Greek: γρύφων, grýphōn, or γρύπων, grýpōn, early form γρύψ, grýps; Latin: gryphus) is a legendary creature with the body, tail, and back legs of a lion; the head and wings of an eagle; and an eagle's talons as its front feet.";
-    animalViewController.animalImage = [UIImage imageNamed:@"Scagryn0013"];
+    animalViewController.animalFact = @"The griffin, griffon, or gryphon is a legendary creature with the body, tail, and back legs of a lion; the head and wings of an eagle; and an eagle's talons as its front feet.";
+    animalViewController.animalImage = [UIImage imageNamed:@"Scagryn0013.jpg"];
     [self.navigationController pushViewController:animalViewController animated:YES];
 }
 

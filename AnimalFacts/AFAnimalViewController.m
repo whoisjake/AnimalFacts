@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -29,16 +29,23 @@
     UIView *view = [[UIView alloc]initWithFrame:frame];
     view.backgroundColor = [UIColor whiteColor];
     
+    UILabel *factLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 190.0f,300.0f,300.0f)];
+    factLabel.text = self.animalFact;
+    factLabel.adjustsFontSizeToFitWidth = YES;
+    factLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    factLabel.numberOfLines = 0;
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:self.animalImage];
+    imageView.frame = CGRectMake(10.0f, 75.0f, 300.0f, 200.0f);
+    
     self.view = view;
+    [self.view addSubview:factLabel];
+    [self.view addSubview:imageView];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UILabel *animalFact = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 150.0f,300.0f, 30.0f)];
-    animalFact.text = self.animalFact;
-    animalFact.lineBreakMode = NSLineBreakByWordWrapping;
-    [self.view addSubview:animalFact];
 }
 
 @end
