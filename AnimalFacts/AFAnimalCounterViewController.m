@@ -41,20 +41,15 @@
     self.countLabel.textAlignment = NSTextAlignmentCenter;
     [self updateLabel];
     
-    UIButton *plusButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [plusButton addTarget:self action:@selector(plusClicked:) forControlEvents:UIControlEventTouchUpInside];
-    plusButton.frame = CGRectMake(160.0f, 150.0f, 30.0f, 30.0f);
-    [plusButton setTitle:@"+" forState:UIControlStateNormal];
+    self.countStepper = [[UIStepper alloc] initWithFrame:CGRectMake(110.0f, 150.0f, 100.0f, 30.0f)];
+    self.countStepper.minimumValue = 0.0f;
+    self.countStepper.maximumValue = 50.0f;
+    self.countStepper.value = self.animalCount;
+    [self.countStepper addTarget:self action:@selector(stepperChanged:) forControlEvents:UIControlEventValueChanged];
     
-    UIButton *minusButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [minusButton addTarget:self action:@selector(minusClicked:) forControlEvents:UIControlEventTouchUpInside];
-    minusButton.frame = CGRectMake(130.0f, 150.0f, 30.0f, 30.0f);
-    [minusButton setTitle:@"-" forState:UIControlStateNormal];
-
     self.view = view;
     [self.view addSubview:self.countLabel];
-    [self.view addSubview:plusButton];
-    [self.view addSubview:minusButton];
+    [self.view addSubview:self.countStepper];
     [self.view addSubview:self.countSlider];
 }
 
@@ -62,15 +57,9 @@
     [self changeCount:(int)roundf(self.countSlider.value)];
 }
 
--(void)plusClicked:(id) sender {
-    if (self.animalCount < 50) {
-        [self changeCount:self.animalCount + 1];
-    }
-}
-
--(void)minusClicked:(id) sender {
-    if (self.animalCount > 0) {
-        [self changeCount:self.animalCount - 1];
+-(void)stepperChanged:(id) sender {
+    if ((self.animalCount < 0) || (self.animalCount < 50)) {
+        [self changeCount:self.countStepper.value];
     }
 }
 
@@ -78,6 +67,7 @@
     self.animalCount = value;
     [self updateLabel];
     self.countSlider.value = self.animalCount;
+    self.countStepper.value = self.animalCount;
 }
 
 -(void)updateLabel {

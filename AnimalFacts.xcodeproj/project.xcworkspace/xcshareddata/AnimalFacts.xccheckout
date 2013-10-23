@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>29078DC6-54FB-4FEF-A07B-EBDAD3E94BB6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AnimalFacts</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>83DA32CD-A070-4721-AE0E-D7AD44247B52</key>
+		<string>ssh://github.com/whoisjake/AnimalFacts.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AnimalFacts.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>83DA32CD-A070-4721-AE0E-D7AD44247B52</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/whoisjake/AnimalFacts.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>83DA32CD-A070-4721-AE0E-D7AD44247B52</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>83DA32CD-A070-4721-AE0E-D7AD44247B52</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AnimalFacts</string>
+		</dict>
+	</array>
+</dict>
+</plist>
