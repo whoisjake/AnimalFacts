@@ -81,7 +81,7 @@
 
 - (void)viewDidLoad
 {
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(tappedBack:)];
+    [self.navigationItem setHidesBackButton:YES];
     [super viewDidLoad];
 }
 
