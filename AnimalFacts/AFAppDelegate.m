@@ -18,12 +18,12 @@
     CGRect screenFrame = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame:screenFrame];
     
-    AFAnimalListViewController * animalListController = [[AFAnimalListViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:animalListController];
+    AFAnimalListViewController *animalListController = [[AFAnimalListViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:animalListController];
     
     AFAnimalCounterViewController *animalCounterController = [[AFAnimalCounterViewController alloc] initWithNibName:nil bundle:nil];
     
-    UITabBarController * tabController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+    UITabBarController *tabController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
     tabController.viewControllers = @[navController,animalCounterController];
     
     self.window.rootViewController = tabController;

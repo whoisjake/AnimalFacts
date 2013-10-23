@@ -10,4 +10,8 @@
 
 @interface AFAnimalCounterViewController : UIViewController
 
+@property (nonatomic) int animalCount;
+@property (nonatomic, strong) UILabel *countLabel;
+@property (nonatomic, strong) UISlider *countSlider;
+
 @end

@@ -19,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIImage * birdImage = [UIImage imageNamed:@"23-bird"];
+        UIImage *birdImage = [UIImage imageNamed:@"23-bird"];
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Animals" image:birdImage tag:11];
         self.title = @"Animals";
     }
