@@ -27,7 +27,7 @@
 		2313A9C4181725A200D88A22 /* Dingo_walking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C3181725A200D88A22 /* Dingo_walking.jpg */; };
 		2313A9C61817273600D88A22 /* Scagryn0013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C51817273600D88A22 /* Scagryn0013.jpg */; };
 		2313A9C81817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */; };
-		238F16451819862300915E29 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 238F16441819862300915E29 /* NSFileManager+DirectoryLocations.m */; };
+		2338E974181998AA004490CB /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338E973181998AA004490CB /* NSFileManager+DirectoryLocations.m */; };
 		23993BA8181956F600A149FD /* AFAnimalNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */; };
 		23993BAA1819575500A149FD /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 23993BA91819575500A149FD /* 179-notepad.png */; };
 /* End PBXBuildFile section */
@@ -70,8 +70,8 @@
 		2313A9C3181725A200D88A22 /* Dingo_walking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dingo_walking.jpg; sourceTree = "<group>"; };
 		2313A9C51817273600D88A22 /* Scagryn0013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Scagryn0013.jpg; sourceTree = "<group>"; };
 		2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "686px-Harpia_harpyja_-falconry_-head-8a.jpg"; sourceTree = "<group>"; };
-		238F16431819862300915E29 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
-		238F16441819862300915E29 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		2338E972181998AA004490CB /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		2338E973181998AA004490CB /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
 		23993BA6181956F600A149FD /* AFAnimalNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalNotesViewController.h; sourceTree = "<group>"; };
 		23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalNotesViewController.m; sourceTree = "<group>"; };
 		23993BA91819575500A149FD /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
@@ -134,8 +134,6 @@
 		2313A9861817198E00D88A22 /* AnimalFacts */ = {
 			isa = PBXGroup;
 			children = (
-				238F16431819862300915E29 /* NSFileManager+DirectoryLocations.h */,
-				238F16441819862300915E29 /* NSFileManager+DirectoryLocations.m */,
 				2313A98F1817198E00D88A22 /* AFAppDelegate.h */,
 				2313A9901817198E00D88A22 /* AFAppDelegate.m */,
 				2313A9981817198E00D88A22 /* Images.xcassets */,
@@ -148,6 +146,8 @@
 				2313A9BC18171E0700D88A22 /* AFAnimalCounterViewController.m */,
 				23993BA6181956F600A149FD /* AFAnimalNotesViewController.h */,
 				23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */,
+				2338E972181998AA004490CB /* NSFileManager+DirectoryLocations.h */,
+				2338E973181998AA004490CB /* NSFileManager+DirectoryLocations.m */,
 			);
 			path = AnimalFacts;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 				23993BA8181956F600A149FD /* AFAnimalNotesViewController.m in Sources */,
 				2313A9911817198E00D88A22 /* AFAppDelegate.m in Sources */,
 				2313A9BA18171C6300D88A22 /* AFAnimalListViewController.m in Sources */,
-				238F16451819862300915E29 /* NSFileManager+DirectoryLocations.m in Sources */,
+				2338E974181998AA004490CB /* NSFileManager+DirectoryLocations.m in Sources */,
 				2313A9BD18171E0700D88A22 /* AFAnimalCounterViewController.m in Sources */,
 				2313A9B718171A2A00D88A22 /* AFAnimalViewController.m in Sources */,
 			);

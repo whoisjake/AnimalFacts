@@ -23,8 +23,9 @@
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Notes" image:noteImage tag:11];
         self.title = @"Notes";
         
-        NSString *path = [[NSFileManager defaultManager] documentsDirectory];
-        path = [path stringByAppendingPathComponent:@"notes.txt"];
+        NSString *path = [[NSFileManager defaultManager] documentsDirectoryPath];
+        path = [path stringByAppendingPathComponent:@"animalNotes.text"];
+        
         self.filePath = path;
     }
     return self;
