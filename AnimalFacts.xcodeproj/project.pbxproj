@@ -27,6 +27,8 @@
 		2313A9C4181725A200D88A22 /* Dingo_walking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C3181725A200D88A22 /* Dingo_walking.jpg */; };
 		2313A9C61817273600D88A22 /* Scagryn0013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C51817273600D88A22 /* Scagryn0013.jpg */; };
 		2313A9C81817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */; };
+		23993BA8181956F600A149FD /* AFAnimalNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */; };
+		23993BAA1819575500A149FD /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 23993BA91819575500A149FD /* 179-notepad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		2313A9C3181725A200D88A22 /* Dingo_walking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dingo_walking.jpg; sourceTree = "<group>"; };
 		2313A9C51817273600D88A22 /* Scagryn0013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Scagryn0013.jpg; sourceTree = "<group>"; };
 		2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "686px-Harpia_harpyja_-falconry_-head-8a.jpg"; sourceTree = "<group>"; };
+		23993BA6181956F600A149FD /* AFAnimalNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalNotesViewController.h; sourceTree = "<group>"; };
+		23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalNotesViewController.m; sourceTree = "<group>"; };
+		23993BA91819575500A149FD /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +141,8 @@
 				2313A9B918171C6300D88A22 /* AFAnimalListViewController.m */,
 				2313A9BB18171E0700D88A22 /* AFAnimalCounterViewController.h */,
 				2313A9BC18171E0700D88A22 /* AFAnimalCounterViewController.m */,
+				23993BA6181956F600A149FD /* AFAnimalNotesViewController.h */,
+				23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */,
 			);
 			path = AnimalFacts;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 		2313A9BE1817200300D88A22 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				23993BA91819575500A149FD /* 179-notepad.png */,
 				2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */,
 				2313A9C51817273600D88A22 /* Scagryn0013.jpg */,
 				2313A9C3181725A200D88A22 /* Dingo_walking.jpg */,
@@ -262,6 +270,7 @@
 				2313A9C21817204200D88A22 /* 161-calculator.png in Resources */,
 				2313A9991817198E00D88A22 /* Images.xcassets in Resources */,
 				2313A9C81817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg in Resources */,
+				23993BAA1819575500A149FD /* 179-notepad.png in Resources */,
 				2313A9C01817201400D88A22 /* 23-bird.png in Resources */,
 				2313A9C61817273600D88A22 /* Scagryn0013.jpg in Resources */,
 				2313A9C4181725A200D88A22 /* Dingo_walking.jpg in Resources */,
@@ -285,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2313A98D1817198E00D88A22 /* main.m in Sources */,
+				23993BA8181956F600A149FD /* AFAnimalNotesViewController.m in Sources */,
 				2313A9911817198E00D88A22 /* AFAppDelegate.m in Sources */,
 				2313A9BA18171C6300D88A22 /* AFAnimalListViewController.m in Sources */,
 				2313A9BD18171E0700D88A22 /* AFAnimalCounterViewController.m in Sources */,
