@@ -7,6 +7,7 @@
 //
 
 #import "AFAnimalNotesViewController.h"
+#import "NSFileManager+DirectoryLocations.h"
 
 @interface AFAnimalNotesViewController ()
 
@@ -21,8 +22,10 @@
         UIImage *noteImage = [UIImage imageNamed:@"179-notepad"];
         self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Notes" image:noteImage tag:11];
         self.title = @"Notes";
-        NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-        path = [path stringByAppendingPathComponent:@"notes.txt"];
+        
+        NSString *path = [[NSFileManager defaultManager] documentsDirectoryPath];
+        path = [path stringByAppendingPathComponent:@"animalNotes.text"];
+        
         self.filePath = path;
     }
     return self;
