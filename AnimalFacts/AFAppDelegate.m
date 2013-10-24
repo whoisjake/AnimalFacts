@@ -10,6 +10,7 @@
 #import "AFAnimalViewController.h"
 #import "AFAnimalListViewController.h"
 #import "AFAnimalCounterViewController.h"
+#import "AFAnimalNotesViewController.h"
 
 @implementation AFAppDelegate
 
@@ -19,12 +20,15 @@
     self.window = [[UIWindow alloc] initWithFrame:screenFrame];
     
     AFAnimalListViewController *animalListController = [[AFAnimalListViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:animalListController];
+    UINavigationController *listNavController = [[UINavigationController alloc] initWithRootViewController:animalListController];
     
     AFAnimalCounterViewController *animalCounterController = [[AFAnimalCounterViewController alloc] initWithNibName:nil bundle:nil];
     
+    AFAnimalNotesViewController *animalNotesViewController = [[AFAnimalNotesViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *notesNavController = [[UINavigationController alloc] initWithRootViewController:animalNotesViewController];
+    
     UITabBarController *tabController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
-    tabController.viewControllers = @[navController,animalCounterController];
+    tabController.viewControllers = @[listNavController,animalCounterController,notesNavController];
     
     self.window.rootViewController = tabController;
     

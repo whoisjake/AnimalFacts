@@ -85,10 +85,6 @@
     [super viewDidLoad];
 }
 
-- (void) tappedBack:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 - (void) viewWillAppear:(BOOL)animated  {
     [super viewWillAppear:animated];
 }
