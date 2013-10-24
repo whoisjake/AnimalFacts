@@ -19,9 +19,8 @@
     static dispatch_once_t onceToken;
     static NSString * documentsPath;
     dispatch_once(&onceToken, ^{
-        documentsPath =  NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, NO)[0];
+        documentsPath =  NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
     });
-    
     
     return documentsPath;
 }
