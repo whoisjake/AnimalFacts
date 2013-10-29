@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0uS-Ve-ktA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - Animals-->
+        <scene sceneID="C9y-lV-Bqo">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="nXI-ZR-cZI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Animals" image="23-bird.png" id="SLA-By-iTb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eq2-3h-sdU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ebd-5x-QvT" kind="relationship" relationship="rootViewController" id="u6Y-fy-Z9e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ivm-Wu-ZAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584" y="-237"/>
+        </scene>
+        <!--Animal List View Controller - Animals-->
+        <scene sceneID="IGm-bs-ceL">
+            <objects>
+                <viewController id="ebd-5x-QvT" customClass="AFAnimalListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mV0-aF-owh"/>
+                        <viewControllerLayoutGuide type="bottom" id="1A3-KO-n9A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XtB-dL-P29">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAw-At-Mjr">
+                                <rect key="frame" x="140" y="221" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dingo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fc6-JU-Z8c" kind="push" id="ool-Ua-B78"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8f-uJ-zJ5">
+                                <rect key="frame" x="118" y="269" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Harpy Eagle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fc6-JU-Z8c" kind="push" id="ui4-29-YcI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="do7-bj-ePC">
+                                <rect key="frame" x="137" y="321" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Griffon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fc6-JU-Z8c" kind="push" id="lsy-d5-9Fi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r8f-uJ-zJ5" firstAttribute="top" secondItem="EAw-At-Mjr" secondAttribute="bottom" constant="18" id="12X-Ow-yfc"/>
+                            <constraint firstAttribute="centerX" secondItem="r8f-uJ-zJ5" secondAttribute="centerX" id="HbI-Ed-mb6"/>
+                            <constraint firstAttribute="centerY" secondItem="r8f-uJ-zJ5" secondAttribute="centerY" id="KAG-NZ-VXX"/>
+                            <constraint firstItem="do7-bj-ePC" firstAttribute="top" secondItem="r8f-uJ-zJ5" secondAttribute="bottom" constant="22" id="TCf-FG-Lmq"/>
+                            <constraint firstAttribute="centerX" secondItem="EAw-At-Mjr" secondAttribute="centerX" id="Yhs-T5-eSp"/>
+                            <constraint firstAttribute="centerX" secondItem="do7-bj-ePC" secondAttribute="centerX" id="gRf-H6-xbf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animals" id="IGH-wl-tYR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVW-Wn-Di2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="-236"/>
+        </scene>
+        <!--Animal View Controller-->
+        <scene sceneID="sta-xC-YoZ">
+            <objects>
+                <viewController id="fc6-JU-Z8c" customClass="AFAnimalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MM5-X4-vU6"/>
+                        <viewControllerLayoutGuide type="bottom" id="0bT-sQ-Kz1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KNY-No-0qu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YBJ-Qc-VLR">
+                                <rect key="frame" x="176" y="77" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Pwa-eQ-Wj8"/>
+                                    <constraint firstAttribute="height" constant="125" id="Y19-XH-lQA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-hl-cGZ">
+                                <rect key="frame" x="20" y="77" width="148" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Species name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wNk-XM-gwO">
+                                <rect key="frame" x="20" y="156" width="148" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="pqg-ef-4wh">
+                                <rect key="frame" x="20" y="219" width="280" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pqg-ef-4wh" firstAttribute="trailing" secondItem="YBJ-Qc-VLR" secondAttribute="trailing" id="24y-pB-pCf"/>
+                            <constraint firstItem="gLq-hl-cGZ" firstAttribute="leading" secondItem="wNk-XM-gwO" secondAttribute="leading" id="H2D-Ok-McU"/>
+                            <constraint firstItem="YBJ-Qc-VLR" firstAttribute="bottom" secondItem="wNk-XM-gwO" secondAttribute="bottom" id="KBx-IM-mh4"/>
+                            <constraint firstItem="gLq-hl-cGZ" firstAttribute="leading" secondItem="pqg-ef-4wh" secondAttribute="leading" id="Xgx-cF-bHp"/>
+                            <constraint firstItem="gLq-hl-cGZ" firstAttribute="top" secondItem="YBJ-Qc-VLR" secondAttribute="top" id="Xxa-kl-i3n"/>
+                            <constraint firstItem="pqg-ef-4wh" firstAttribute="top" secondItem="wNk-XM-gwO" secondAttribute="bottom" constant="18" id="dF7-WS-fEY"/>
+                            <constraint firstAttribute="centerX" secondItem="pqg-ef-4wh" secondAttribute="centerX" id="dOM-Xb-S8O"/>
+                            <constraint firstItem="pqg-ef-4wh" firstAttribute="top" secondItem="YBJ-Qc-VLR" secondAttribute="bottom" constant="18" id="nCi-iw-jkh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aur-GY-5jg"/>
+                    <connections>
+                        <outlet property="animalFactLabel" destination="pqg-ef-4wh" id="Oig-Ha-kMH"/>
+                        <outlet property="animalImageView" destination="YBJ-Qc-VLR" id="TWA-fa-6EM"/>
+                        <outlet property="animalNameLabel" destination="gLq-hl-cGZ" id="Sbq-p2-hew"/>
+                        <outlet property="animalSpeciesLabel" destination="wNk-XM-gwO" id="gmD-5P-imm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCw-5J-bZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1259" y="-235"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="w0D-ow-ErY">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="0uS-Ve-ktA" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Xxt-xa-GT9">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nXI-ZR-cZI" kind="relationship" relationship="viewControllers" id="Xcb-Bh-ljf"/>
+                        <segue destination="UVP-w7-5Or" kind="relationship" relationship="viewControllers" id="ccc-H0-18T"/>
+                        <segue destination="ygI-ox-UfT" kind="relationship" relationship="viewControllers" id="EWc-PG-DlB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYE-8b-ntz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67" y="130"/>
+        </scene>
+        <!--Animal Counter View Controller - Counter-->
+        <scene sceneID="o9w-NC-vsv">
+            <objects>
+                <viewController id="UVP-w7-5Or" customClass="AFAnimalCounterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XcY-gP-2WN"/>
+                        <viewControllerLayoutGuide type="bottom" id="PmV-Dl-Esg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ktc-4c-aCg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uc7-Ck-Nce">
+                                <rect key="frame" x="113" y="269" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="stepperChanged:" destination="UVP-w7-5Or" eventType="valueChanged" id="Mcu-2Z-P6v"/>
+                                </connections>
+                            </stepper>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="f3y-8x-BW7">
+                                <rect key="frame" x="18" y="345" width="284" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="UVP-w7-5Or" eventType="valueChanged" id="RYX-CE-CSr"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKz-rv-xvP">
+                                <rect key="frame" x="139" y="195" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="f3y-8x-BW7" secondAttribute="centerX" id="9Us-LA-8VS"/>
+                            <constraint firstItem="f3y-8x-BW7" firstAttribute="top" secondItem="Uc7-Ck-Nce" secondAttribute="bottom" constant="47" id="Ld9-gH-njG"/>
+                            <constraint firstItem="Uc7-Ck-Nce" firstAttribute="top" secondItem="oKz-rv-xvP" secondAttribute="bottom" constant="53" id="SEW-Uc-YuL"/>
+                            <constraint firstAttribute="centerX" secondItem="oKz-rv-xvP" secondAttribute="centerX" id="inC-Gl-N0j"/>
+                            <constraint firstAttribute="centerX" secondItem="Uc7-Ck-Nce" secondAttribute="centerX" id="jua-oU-2W1"/>
+                            <constraint firstAttribute="centerY" secondItem="Uc7-Ck-Nce" secondAttribute="centerY" constant="0.5" id="sSc-uL-nUz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Counter" image="161-calculator.png" id="zQd-3B-j5E"/>
+                    <connections>
+                        <outlet property="animalCountLabel" destination="oKz-rv-xvP" id="ELq-cs-c2z"/>
+                        <outlet property="animalCountSlider" destination="f3y-8x-BW7" id="OI2-uV-qxh"/>
+                        <outlet property="animalCountStepper" destination="Uc7-Ck-Nce" id="QGY-5a-1wF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Weo-2k-6mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="456"/>
+        </scene>
+        <!--Animal Notes View Controller - Notes-->
+        <scene sceneID="Aat-QV-t1Y">
+            <objects>
+                <viewController id="ygI-ox-UfT" customClass="AFAnimalNotesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j6H-0O-ddR"/>
+                        <viewControllerLayoutGuide type="bottom" id="zOI-x6-HlP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GIy-P4-qzy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-jF-R9X">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="i8M-jF-R9X" secondAttribute="centerX" id="AiT-WI-Aha"/>
+                            <constraint firstItem="i8M-jF-R9X" firstAttribute="leading" secondItem="GIy-P4-qzy" secondAttribute="leading" id="QEj-W1-exL"/>
+                            <constraint firstAttribute="trailing" secondItem="i8M-jF-R9X" secondAttribute="trailing" id="lib-Hj-seX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notes" image="179-notepad.png" id="KP5-bV-5MG"/>
+                    <connections>
+                        <outlet property="notesTextView" destination="i8M-jF-R9X" id="fkW-E4-8Zo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5S-ra-e04" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="459"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="161-calculator.png" width="22" height="28"/>
+        <image name="179-notepad.png" width="22" height="28"/>
+        <image name="23-bird.png" width="25" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="ui4-29-YcI"/>
+    </inferredMetricsTieBreakers>
+</document>

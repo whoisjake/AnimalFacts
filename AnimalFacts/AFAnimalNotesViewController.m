@@ -31,19 +31,6 @@
     return self;
 }
 
-- (void)loadView {
-    CGRect frame = [UIScreen mainScreen].bounds;
-    
-    UIView *view = [[UIView alloc]initWithFrame:frame];
-    view.backgroundColor = [UIColor whiteColor];
-    
-    self.notesTextView = [[UITextView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height)];
-    [self loadFromDisk];
-    
-    self.view = view;
-    [self.view addSubview:self.notesTextView];
-}
-
 - (void) saveToDisk {
     [NSKeyedArchiver archiveRootObject:self.notesTextView.text toFile:self.filePath];
 }
