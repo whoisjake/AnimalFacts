@@ -27,4 +27,8 @@
     return allAnimals;
 }
 
+- (UIImage*) image {
+    return [UIImage imageNamed:self.imagePath];
+}
+
 @end

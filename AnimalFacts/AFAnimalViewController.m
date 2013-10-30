@@ -36,7 +36,7 @@
     self.animalNameLabel.text = self.animal.name;
     self.animalSpeciesLabel.text = self.animal.species;
     self.animalFactLabel.text = self.animal.fact;
-    self.animalImageView.image = [UIImage imageNamed:self.animal.image];
+    self.animalImageView.image = self.animal.image;
 }
 
 @end

@@ -33,6 +33,7 @@
 		2387163418204EC900870F98 /* AnimalFactsStoryiPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2387163318204EC900870F98 /* AnimalFactsStoryiPhone.storyboard */; };
 		23993BA8181956F600A149FD /* AFAnimalNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */; };
 		23993BAA1819575500A149FD /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 23993BA91819575500A149FD /* 179-notepad.png */; };
+		23B33DEE1821419A00264295 /* SoldierFly.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23B33DED1821419A00264295 /* SoldierFly.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		23993BA6181956F600A149FD /* AFAnimalNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalNotesViewController.h; sourceTree = "<group>"; };
 		23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalNotesViewController.m; sourceTree = "<group>"; };
 		23993BA91819575500A149FD /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
+		23B33DED1821419A00264295 /* SoldierFly.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SoldierFly.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		2313A9BE1817200300D88A22 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				23B33DED1821419A00264295 /* SoldierFly.jpeg */,
 				23993BA91819575500A149FD /* 179-notepad.png */,
 				2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */,
 				2313A9C51817273600D88A22 /* Scagryn0013.jpg */,
@@ -293,6 +296,7 @@
 				2313A9C61817273600D88A22 /* Scagryn0013.jpg in Resources */,
 				2313A9C4181725A200D88A22 /* Dingo_walking.jpg in Resources */,
 				2313A98B1817198E00D88A22 /* InfoPlist.strings in Resources */,
+				23B33DEE1821419A00264295 /* SoldierFly.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

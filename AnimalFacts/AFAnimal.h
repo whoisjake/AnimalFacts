@@ -13,7 +13,8 @@
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *species;
 @property (nonatomic) NSString *fact;
-@property (nonatomic) NSString *image;
+@property (nonatomic) NSString *imagePath;
+@property (nonatomic, strong, readonly) UIImage * image;
 
 + (NSMutableArray*) allAnimals;
 
