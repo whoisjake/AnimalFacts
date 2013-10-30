@@ -19,21 +19,29 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        NSString *path = [[NSFileManager defaultManager] documentsDirectoryPath];
-        path = [path stringByAppendingPathComponent:@"animalNotes.text"];
-        
-        self.filePath = path;
     }
     return self;
 }
 
+- (NSString*) notesPath {
+    static dispatch_once_t onceToken;
+    static NSString * notesPath;
+    dispatch_once(&onceToken, ^{
+        [[NSFileManager defaultManager] documentsDirectoryPath];
+        NSString *path = [[NSFileManager defaultManager] documentsDirectoryPath];
+        notesPath = [path stringByAppendingPathComponent:@"animalNotes.text"];
+    });
+    
+    return notesPath;
+}
+
 - (void) saveToDisk {
-    [NSKeyedArchiver archiveRootObject:self.notesTextView.text toFile:self.filePath];
+    [NSKeyedArchiver archiveRootObject:self.notesTextView.text toFile:[self notesPath]];
 }
 
 - (void) loadFromDisk {
-    if ([[NSFileManager defaultManager] fileExistsAtPath:self.filePath]) {
-        self.notesTextView.text = [NSKeyedUnarchiver unarchiveObjectWithFile:self.filePath];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[self notesPath]]) {
+        self.notesTextView.text = [NSKeyedUnarchiver unarchiveObjectWithFile:[self notesPath]];
     }
 }
 
@@ -45,6 +53,7 @@
 {
     [super viewDidLoad];
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(tappedSave:)];
+    [self loadFromDisk];
 }
 
 - (void) tappedSave:(id)sender {
