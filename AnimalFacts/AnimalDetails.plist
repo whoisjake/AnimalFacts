@@ -6,31 +6,31 @@
 		<key>name</key>
 		<string>Dingo</string>
 		<key>species</key>
-		<string></string>
+		<string>Canis lupus dingo</string>
 		<key>fact</key>
-		<string></string>
+		<string>The dingo (Canis lupus dingo) is a free-roaming dog found mainly in Australia, as well as Southeast Asia, where it is said to have originated. It is currently classified as a subspecies of the grey wolf, Canis lupus.</string>
 		<key>image</key>
-		<string></string>
+		<string>Dingo_walking.jpg</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Eagle</string>
+		<string>Harpy Eagle</string>
 		<key>species</key>
-		<string></string>
+		<string>Harpia harpyja</string>
 		<key>fact</key>
-		<string></string>
+		<string>The Harpy Eagle is a Neotropical species of eagle. It is sometimes known as the American Harpy Eagle to distinguish it from the Papuan Eagle which is sometimes known as the New Guinea Harpy Eagle.</string>
 		<key>image</key>
-		<string></string>
+		<string>686px-Harpia_harpyja_-falconry_-head-8a.jpg</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Griffon</string>
 		<key>species</key>
-		<string></string>
+		<string>gryphus</string>
 		<key>fact</key>
-		<string></string>
+		<string>The griffin, griffon, or gryphon is a legendary creature with the body, tail, and back legs of a lion; the head and wings of an eagle; and an eagle&apos;s talons as its front feet.</string>
 		<key>image</key>
-		<string></string>
+		<string>Scagryn0013.jpg</string>
 	</dict>
 </array>
 </plist>

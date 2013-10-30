@@ -19,10 +19,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIImage *noteImage = [UIImage imageNamed:@"179-notepad"];
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Notes" image:noteImage tag:11];
-        self.title = @"Notes";
-        
         NSString *path = [[NSFileManager defaultManager] documentsDirectoryPath];
         path = [path stringByAppendingPathComponent:@"animalNotes.text"];
         

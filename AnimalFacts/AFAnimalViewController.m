@@ -25,9 +25,18 @@
 
 - (void) setAnimal:(AFAnimal *)animal {
     _animal = animal;
+    [self updateFromAnimal];
+}
+
+- (void) viewDidLoad {
+    [self updateFromAnimal];
+}
+
+- (void) updateFromAnimal {
     self.animalNameLabel.text = self.animal.name;
     self.animalSpeciesLabel.text = self.animal.species;
     self.animalFactLabel.text = self.animal.fact;
+    self.animalImageView.image = [UIImage imageNamed:self.animal.image];
 }
 
 @end

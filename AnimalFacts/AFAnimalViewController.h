@@ -16,6 +16,6 @@
 @property (nonatomic,weak) IBOutlet UILabel *animalNameLabel;
 @property (nonatomic,weak) IBOutlet UILabel *animalSpeciesLabel;
 @property (nonatomic,weak) IBOutlet UIImageView *animalImageView;
-@property (nonatomic,weak) IBOutlet UILabel *animalFactLabel;
+@property (nonatomic,weak) IBOutlet UITextView *animalFactLabel;
 
 @end
