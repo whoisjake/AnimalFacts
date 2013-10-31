@@ -120,43 +120,41 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAb-fU-1gk">
-                                <rect key="frame" x="20" y="210" width="280" height="220"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="E5p-zO-wcg">
+                                <rect key="frame" x="20" y="207" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" staticText="YES"/>
-                                </accessibility>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wNk-XM-gwO" firstAttribute="leading" secondItem="KNY-No-0qu" secondAttribute="leading" constant="20" id="28p-ou-9hP"/>
-                            <constraint firstAttribute="trailing" secondItem="mAb-fU-1gk" secondAttribute="trailing" constant="20" id="867-VO-89z"/>
                             <constraint firstItem="gLq-hl-cGZ" firstAttribute="leading" secondItem="KNY-No-0qu" secondAttribute="leading" constant="20" id="DoZ-HH-0PN"/>
                             <constraint firstAttribute="trailing" secondItem="YBJ-Qc-VLR" secondAttribute="trailing" constant="20" id="HF3-B3-TmZ"/>
                             <constraint firstItem="gLq-hl-cGZ" firstAttribute="top" secondItem="MM5-X4-vU6" secondAttribute="bottom" constant="13" id="HZ3-km-mX5"/>
-                            <constraint firstItem="mAb-fU-1gk" firstAttribute="top" secondItem="YBJ-Qc-VLR" secondAttribute="bottom" constant="8" id="LdF-gF-4fh"/>
-                            <constraint firstItem="mAb-fU-1gk" firstAttribute="leading" secondItem="KNY-No-0qu" secondAttribute="leading" constant="20" id="PwD-hK-h9r"/>
+                            <constraint firstItem="E5p-zO-wcg" firstAttribute="leading" secondItem="gLq-hl-cGZ" secondAttribute="leading" id="NWp-sZ-EaB"/>
+                            <constraint firstAttribute="trailing" secondItem="E5p-zO-wcg" secondAttribute="trailing" constant="20" id="QA3-rD-rRY"/>
                             <constraint firstItem="YBJ-Qc-VLR" firstAttribute="bottom" secondItem="wNk-XM-gwO" secondAttribute="bottom" id="R7O-hn-esr"/>
-                            <constraint firstAttribute="centerX" secondItem="mAb-fU-1gk" secondAttribute="centerX" id="YU9-4U-JsZ"/>
+                            <constraint firstItem="E5p-zO-wcg" firstAttribute="trailing" secondItem="YBJ-Qc-VLR" secondAttribute="trailing" id="VQf-NL-r94"/>
                             <constraint firstItem="YBJ-Qc-VLR" firstAttribute="leading" secondItem="wNk-XM-gwO" secondAttribute="trailing" constant="5" id="aBx-jx-Aqy"/>
+                            <constraint firstItem="E5p-zO-wcg" firstAttribute="top" secondItem="wNk-XM-gwO" secondAttribute="bottom" constant="5" id="ckt-oh-DOl"/>
                             <constraint firstItem="YBJ-Qc-VLR" firstAttribute="top" secondItem="MM5-X4-vU6" secondAttribute="bottom" constant="13" id="dGy-YX-rRk"/>
                             <constraint firstItem="wNk-XM-gwO" firstAttribute="leading" secondItem="gLq-hl-cGZ" secondAttribute="leading" id="dpO-b2-odM"/>
-                            <constraint firstItem="0bT-sQ-Kz1" firstAttribute="top" secondItem="mAb-fU-1gk" secondAttribute="bottom" constant="1" id="fGB-xF-emp"/>
                             <constraint firstItem="gLq-hl-cGZ" firstAttribute="leading" secondItem="wNk-XM-gwO" secondAttribute="leading" id="gFd-ru-aH6"/>
                             <constraint firstItem="YBJ-Qc-VLR" firstAttribute="leading" secondItem="gLq-hl-cGZ" secondAttribute="trailing" constant="5" id="is0-rL-ImZ"/>
+                            <constraint firstItem="0bT-sQ-Kz1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="E5p-zO-wcg" secondAttribute="bottom" constant="5" id="mJV-mr-cfF"/>
+                            <constraint firstItem="E5p-zO-wcg" firstAttribute="top" secondItem="YBJ-Qc-VLR" secondAttribute="bottom" constant="5" id="sXL-fN-ERk"/>
                             <constraint firstItem="gLq-hl-cGZ" firstAttribute="top" secondItem="YBJ-Qc-VLR" secondAttribute="top" id="wJ0-gH-jmV"/>
                             <constraint firstItem="YBJ-Qc-VLR" firstAttribute="bottom" secondItem="wNk-XM-gwO" secondAttribute="bottom" id="wiC-mN-mrV"/>
-                            <constraint firstItem="mAb-fU-1gk" firstAttribute="top" secondItem="wNk-XM-gwO" secondAttribute="bottom" constant="8" id="y30-0P-unS"/>
+                            <constraint firstItem="E5p-zO-wcg" firstAttribute="leading" secondItem="KNY-No-0qu" secondAttribute="leading" constant="20" id="yg5-dI-PAi"/>
+                            <constraint firstItem="E5p-zO-wcg" firstAttribute="leading" secondItem="wNk-XM-gwO" secondAttribute="leading" id="zYI-pN-kYm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aur-GY-5jg"/>
                     <connections>
-                        <outlet property="animalFactLabel" destination="mAb-fU-1gk" id="9jS-bq-mfe"/>
+                        <outlet property="animalFactLabel" destination="E5p-zO-wcg" id="dQ7-03-iWH"/>
                         <outlet property="animalImageView" destination="YBJ-Qc-VLR" id="TWA-fa-6EM"/>
                         <outlet property="animalNameLabel" destination="gLq-hl-cGZ" id="Sbq-p2-hew"/>
                         <outlet property="animalSpeciesLabel" destination="wNk-XM-gwO" id="gmD-5P-imm"/>
