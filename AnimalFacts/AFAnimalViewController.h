@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFAnimal.h"
 
 @interface AFAnimalViewController : UIViewController
 
-@property (nonatomic, strong) UIImage *animalImage;
-@property (nonatomic, strong) NSString *animalFact;
+@property (nonatomic, strong) AFAnimal *animal;
 
-@property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) UILabel *factLabel;
+@property (nonatomic,weak) IBOutlet UILabel *animalNameLabel;
+@property (nonatomic,weak) IBOutlet UILabel *animalSpeciesLabel;
+@property (nonatomic,weak) IBOutlet UIImageView *animalImageView;
+@property (nonatomic,weak) IBOutlet UILabel *animalFactLabel;
 
 @end

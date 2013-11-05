@@ -23,29 +23,20 @@
     return self;
 }
 
-- (void)loadView {
-    CGRect frame = [UIScreen mainScreen].bounds;
-    
-    UIView *view = [[UIView alloc]initWithFrame:frame];
-    view.backgroundColor = [UIColor whiteColor];
-    
-    UILabel *factLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 190.0f,300.0f,300.0f)];
-    factLabel.text = self.animalFact;
-    factLabel.adjustsFontSizeToFitWidth = YES;
-    factLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    factLabel.numberOfLines = 0;
-    
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:self.animalImage];
-    imageView.frame = CGRectMake(10.0f, 75.0f, 300.0f, 200.0f);
-    
-    self.view = view;
-    [self.view addSubview:factLabel];
-    [self.view addSubview:imageView];
+- (void) setAnimal:(AFAnimal *)animal {
+    _animal = animal;
+    [self updateFromAnimal];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+- (void) viewDidLoad {
+    [self updateFromAnimal];
+}
+
+- (void) updateFromAnimal {
+    self.animalNameLabel.text = self.animal.name;
+    self.animalSpeciesLabel.text = self.animal.species;
+    self.animalFactLabel.text = self.animal.fact;
+    self.animalImageView.image = self.animal.image;
 }
 
 @end

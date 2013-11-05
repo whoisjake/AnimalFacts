@@ -19,38 +19,29 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIImage *noteImage = [UIImage imageNamed:@"179-notepad"];
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Notes" image:noteImage tag:11];
-        self.title = @"Notes";
-        
-        NSString *path = [[NSFileManager defaultManager] documentsDirectoryPath];
-        path = [path stringByAppendingPathComponent:@"animalNotes.text"];
-        
-        self.filePath = path;
     }
     return self;
 }
 
-- (void)loadView {
-    CGRect frame = [UIScreen mainScreen].bounds;
+- (NSString*) notesPath {
+    static dispatch_once_t onceToken;
+    static NSString * notesPath;
+    dispatch_once(&onceToken, ^{
+        [[NSFileManager defaultManager] documentsDirectoryPath];
+        NSString *path = [[NSFileManager defaultManager] documentsDirectoryPath];
+        notesPath = [path stringByAppendingPathComponent:@"animalNotes.text"];
+    });
     
-    UIView *view = [[UIView alloc]initWithFrame:frame];
-    view.backgroundColor = [UIColor whiteColor];
-    
-    self.notesTextView = [[UITextView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height)];
-    [self loadFromDisk];
-    
-    self.view = view;
-    [self.view addSubview:self.notesTextView];
+    return notesPath;
 }
 
 - (void) saveToDisk {
-    [NSKeyedArchiver archiveRootObject:self.notesTextView.text toFile:self.filePath];
+    [NSKeyedArchiver archiveRootObject:self.notesTextView.text toFile:[self notesPath]];
 }
 
 - (void) loadFromDisk {
-    if ([[NSFileManager defaultManager] fileExistsAtPath:self.filePath]) {
-        self.notesTextView.text = [NSKeyedUnarchiver unarchiveObjectWithFile:self.filePath];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[self notesPath]]) {
+        self.notesTextView.text = [NSKeyedUnarchiver unarchiveObjectWithFile:[self notesPath]];
     }
 }
 
@@ -62,6 +53,7 @@
 {
     [super viewDidLoad];
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(tappedSave:)];
+    [self loadFromDisk];
 }
 
 - (void) tappedSave:(id)sender {

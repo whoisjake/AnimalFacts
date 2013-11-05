@@ -11,6 +11,6 @@
 @interface AFAnimalNotesViewController : UIViewController
 
 @property (nonatomic, strong) NSString *filePath;
-@property (nonatomic, strong) UITextView *notesTextView;
+@property (nonatomic, weak) IBOutlet UITextView *notesTextView;
 
 @end

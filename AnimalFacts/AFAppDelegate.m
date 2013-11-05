@@ -16,23 +16,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    CGRect screenFrame = [[UIScreen mainScreen] bounds];
-    self.window = [[UIWindow alloc] initWithFrame:screenFrame];
-    
-    AFAnimalListViewController *animalListController = [[AFAnimalListViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *listNavController = [[UINavigationController alloc] initWithRootViewController:animalListController];
-    
-    AFAnimalCounterViewController *animalCounterController = [[AFAnimalCounterViewController alloc] initWithNibName:nil bundle:nil];
-    
-    AFAnimalNotesViewController *animalNotesViewController = [[AFAnimalNotesViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *notesNavController = [[UINavigationController alloc] initWithRootViewController:animalNotesViewController];
-    
-    UITabBarController *tabController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
-    tabController.viewControllers = @[listNavController,animalCounterController,notesNavController];
-    
-    self.window.rootViewController = tabController;
-    
-    [self.window makeKeyAndVisible];
     return YES;
 }
 							

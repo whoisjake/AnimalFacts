@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Dingo</string>
+		<key>species</key>
+		<string>Canis lupus dingo</string>
+		<key>fact</key>
+		<string>The dingo (Canis lupus dingo) is a free-roaming dog found mainly in Australia, as well as Southeast Asia, where it is said to have originated. It is currently classified as a subspecies of the grey wolf, Canis lupus.</string>
+		<key>imagePath</key>
+		<string>Dingo_walking.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Harpy Eagle</string>
+		<key>species</key>
+		<string>Harpia harpyja</string>
+		<key>fact</key>
+		<string>The Harpy Eagle is a Neotropical species of eagle. It is sometimes known as the American Harpy Eagle to distinguish it from the Papuan Eagle which is sometimes known as the New Guinea Harpy Eagle.</string>
+		<key>imagePath</key>
+		<string>686px-Harpia_harpyja_-falconry_-head-8a.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Griffon</string>
+		<key>species</key>
+		<string>gryphus</string>
+		<key>fact</key>
+		<string>The griffin, griffon, or gryphon is a legendary creature with the body, tail, and back legs of a lion; the head and wings of an eagle; and an eagle&apos;s talons as its front feet.</string>
+		<key>imagePath</key>
+		<string>Scagryn0013.jpg</string>
+	</dict>
+    <dict>
+		<key>name</key>
+		<string>Soldier Fly</string>
+		<key>species</key>
+		<string>Parastratiosphecomyia stratiosphecomyioides</string>
+		<key>fact</key>
+		<string>The Soldier Fly, common in North America, can be found in almost any household where Ryan Johnson has stepped foot. Scientists have long believed that Mr. Johnson&apos;s family heritage has had something to do with their existence, but it&apos;s unproven exactly which trait causes their massive desire to reproduce.</string>
+		<key>imagePath</key>
+		<string>SoldierFly.jpeg</string>
+	</dict>
+</array>
+</plist>
