@@ -27,6 +27,14 @@
     return allAnimals;
 }
 
++ (NSMutableArray*) loadAnimals {
+    return [[NSMutableArray alloc] init];
+}
+
++ (void) saveAnimals: (NSMutableArray*) animals {
+    
+}
+
 - (UIImage*) image {
     return [UIImage imageNamed:self.imagePath];
 }

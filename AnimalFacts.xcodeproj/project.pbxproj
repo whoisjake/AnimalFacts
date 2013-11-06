@@ -19,21 +19,19 @@
 		2313A9A21817198E00D88A22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313A9841817198E00D88A22 /* UIKit.framework */; };
 		2313A9AA1817198E00D88A22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9A81817198E00D88A22 /* InfoPlist.strings */; };
 		2313A9AC1817198E00D88A22 /* AnimalFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2313A9AB1817198E00D88A22 /* AnimalFactsTests.m */; };
-		2313A9B718171A2A00D88A22 /* AFAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2313A9B618171A2A00D88A22 /* AFAnimalViewController.m */; };
-		2313A9BA18171C6300D88A22 /* AFAnimalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2313A9B918171C6300D88A22 /* AFAnimalListViewController.m */; };
-		2313A9BD18171E0700D88A22 /* AFAnimalCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2313A9BC18171E0700D88A22 /* AFAnimalCounterViewController.m */; };
 		2313A9C01817201400D88A22 /* 23-bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9BF1817201400D88A22 /* 23-bird.png */; };
 		2313A9C21817204200D88A22 /* 161-calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C11817204200D88A22 /* 161-calculator.png */; };
 		2313A9C4181725A200D88A22 /* Dingo_walking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C3181725A200D88A22 /* Dingo_walking.jpg */; };
 		2313A9C61817273600D88A22 /* Scagryn0013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C51817273600D88A22 /* Scagryn0013.jpg */; };
 		2313A9C81817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */; };
 		2338E974181998AA004490CB /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338E973181998AA004490CB /* NSFileManager+DirectoryLocations.m */; };
+		237E8C1C182A910D00BA65B2 /* AFAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237E8C1B182A910D00BA65B2 /* AFAnimalViewController.m */; };
 		23816FF3182066ED00E947B3 /* AFAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 23816FF2182066ED00E947B3 /* AFAnimal.m */; };
 		23816FF51820679000E947B3 /* AnimalDetails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23816FF41820679000E947B3 /* AnimalDetails.plist */; };
 		2387163418204EC900870F98 /* AnimalFactsStoryiPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2387163318204EC900870F98 /* AnimalFactsStoryiPhone.storyboard */; };
-		23993BA8181956F600A149FD /* AFAnimalNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */; };
 		23993BAA1819575500A149FD /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 23993BA91819575500A149FD /* 179-notepad.png */; };
 		23B33DEE1821419A00264295 /* SoldierFly.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23B33DED1821419A00264295 /* SoldierFly.jpeg */; };
+		23F4DB1D1829778D00072A28 /* AFAnimalFactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F4DB1C1829778D00072A28 /* AFAnimalFactsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +61,6 @@
 		2313A9A71817198E00D88A22 /* AnimalFactsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimalFactsTests-Info.plist"; sourceTree = "<group>"; };
 		2313A9A91817198E00D88A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2313A9AB1817198E00D88A22 /* AnimalFactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalFactsTests.m; sourceTree = "<group>"; };
-		2313A9B518171A2A00D88A22 /* AFAnimalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalViewController.h; sourceTree = "<group>"; };
-		2313A9B618171A2A00D88A22 /* AFAnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalViewController.m; sourceTree = "<group>"; };
-		2313A9B818171C6300D88A22 /* AFAnimalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalListViewController.h; sourceTree = "<group>"; };
-		2313A9B918171C6300D88A22 /* AFAnimalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalListViewController.m; sourceTree = "<group>"; };
-		2313A9BB18171E0700D88A22 /* AFAnimalCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalCounterViewController.h; sourceTree = "<group>"; };
-		2313A9BC18171E0700D88A22 /* AFAnimalCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalCounterViewController.m; sourceTree = "<group>"; };
 		2313A9BF1817201400D88A22 /* 23-bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "23-bird.png"; sourceTree = "<group>"; };
 		2313A9C11817204200D88A22 /* 161-calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "161-calculator.png"; sourceTree = "<group>"; };
 		2313A9C3181725A200D88A22 /* Dingo_walking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dingo_walking.jpg; sourceTree = "<group>"; };
@@ -76,14 +68,16 @@
 		2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "686px-Harpia_harpyja_-falconry_-head-8a.jpg"; sourceTree = "<group>"; };
 		2338E972181998AA004490CB /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		2338E973181998AA004490CB /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		237E8C1A182A910D00BA65B2 /* AFAnimalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalViewController.h; sourceTree = "<group>"; };
+		237E8C1B182A910D00BA65B2 /* AFAnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalViewController.m; sourceTree = "<group>"; };
 		23816FF1182066ED00E947B3 /* AFAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimal.h; sourceTree = "<group>"; };
 		23816FF2182066ED00E947B3 /* AFAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimal.m; sourceTree = "<group>"; };
 		23816FF41820679000E947B3 /* AnimalDetails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AnimalDetails.plist; sourceTree = "<group>"; };
 		2387163318204EC900870F98 /* AnimalFactsStoryiPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimalFactsStoryiPhone.storyboard; sourceTree = "<group>"; };
-		23993BA6181956F600A149FD /* AFAnimalNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalNotesViewController.h; sourceTree = "<group>"; };
-		23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalNotesViewController.m; sourceTree = "<group>"; };
 		23993BA91819575500A149FD /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
 		23B33DED1821419A00264295 /* SoldierFly.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SoldierFly.jpeg; sourceTree = "<group>"; };
+		23F4DB1B1829778D00072A28 /* AFAnimalFactsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalFactsController.h; sourceTree = "<group>"; };
+		23F4DB1C1829778D00072A28 /* AFAnimalFactsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalFactsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,18 +142,14 @@
 				2313A9901817198E00D88A22 /* AFAppDelegate.m */,
 				2313A9981817198E00D88A22 /* Images.xcassets */,
 				2313A9871817198E00D88A22 /* Supporting Files */,
-				2313A9B518171A2A00D88A22 /* AFAnimalViewController.h */,
-				2313A9B618171A2A00D88A22 /* AFAnimalViewController.m */,
-				2313A9B818171C6300D88A22 /* AFAnimalListViewController.h */,
-				2313A9B918171C6300D88A22 /* AFAnimalListViewController.m */,
-				2313A9BB18171E0700D88A22 /* AFAnimalCounterViewController.h */,
-				2313A9BC18171E0700D88A22 /* AFAnimalCounterViewController.m */,
-				23993BA6181956F600A149FD /* AFAnimalNotesViewController.h */,
-				23993BA7181956F600A149FD /* AFAnimalNotesViewController.m */,
 				2338E972181998AA004490CB /* NSFileManager+DirectoryLocations.h */,
 				2338E973181998AA004490CB /* NSFileManager+DirectoryLocations.m */,
 				23816FF1182066ED00E947B3 /* AFAnimal.h */,
 				23816FF2182066ED00E947B3 /* AFAnimal.m */,
+				23F4DB1B1829778D00072A28 /* AFAnimalFactsController.h */,
+				23F4DB1C1829778D00072A28 /* AFAnimalFactsController.m */,
+				237E8C1A182A910D00BA65B2 /* AFAnimalViewController.h */,
+				237E8C1B182A910D00BA65B2 /* AFAnimalViewController.m */,
 			);
 			path = AnimalFacts;
 			sourceTree = "<group>";
@@ -316,13 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2313A98D1817198E00D88A22 /* main.m in Sources */,
-				23993BA8181956F600A149FD /* AFAnimalNotesViewController.m in Sources */,
+				237E8C1C182A910D00BA65B2 /* AFAnimalViewController.m in Sources */,
 				2313A9911817198E00D88A22 /* AFAppDelegate.m in Sources */,
-				2313A9BA18171C6300D88A22 /* AFAnimalListViewController.m in Sources */,
+				23F4DB1D1829778D00072A28 /* AFAnimalFactsController.m in Sources */,
 				2338E974181998AA004490CB /* NSFileManager+DirectoryLocations.m in Sources */,
-				2313A9BD18171E0700D88A22 /* AFAnimalCounterViewController.m in Sources */,
 				23816FF3182066ED00E947B3 /* AFAnimal.m in Sources */,
-				2313A9B718171A2A00D88A22 /* AFAnimalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
