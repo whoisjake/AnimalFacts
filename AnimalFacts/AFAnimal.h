@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-NSString * const AFAnimalSubjectSaved = @"AFAnimalSubjectSaved";
-NSString * const AFAnimalSubjectCancelled = @"AFAnimalSubjectCancelled";
+extern NSString * const AFAnimalSubjectSaved;
+extern NSString * const AFAnimalSubjectCancelled;
 
-NSString * const AFAnimalNameKey = @"Name";
-NSString * const AFAnimalSpeciesKey = @"Species";
-NSString * const AFAnimalFactKey = @"Fact";
-NSString * const AFAnimalImageKey = @"Image";
+extern NSString * const AFAnimalNameKey;
+extern NSString * const AFAnimalSpeciesKey;
+extern NSString * const AFAnimalFactKey;
+extern NSString * const AFAnimalImageKey;
 
 @interface AFAnimal : NSObject <NSCoding>
 

@@ -9,6 +9,14 @@
 #import "AFAnimal.h"
 #import "NSFileManager+DirectoryLocations.h"
 
+NSString * const AFAnimalSubjectSaved = @"AFAnimalSubjectSaved";
+NSString * const AFAnimalSubjectCancelled = @"AFAnimalSubjectCancelled";
+
+NSString * const AFAnimalNameKey = @"Name";
+NSString * const AFAnimalSpeciesKey = @"Species";
+NSString * const AFAnimalFactKey = @"Fact";
+NSString * const AFAnimalImageKey = @"Image";
+
 @implementation AFAnimal {
     UIImage * _picture;
 }
