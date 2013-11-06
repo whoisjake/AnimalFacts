@@ -13,11 +13,16 @@
 
 @property (nonatomic,strong) AFAnimal * animal;
 
+@property (nonatomic,weak) IBOutlet UINavigationBar * navBar;
 @property (nonatomic,weak) IBOutlet UITextField * animalNameLabel;
 @property (nonatomic,weak) IBOutlet UITextView * animalFactTextView;
 @property (nonatomic,weak) IBOutlet UIImageView * animalImageView;
 @property (nonatomic,weak) IBOutlet UIButton * photoButton;
 @property (nonatomic,weak) IBOutlet UIButton * cancelButton;
 @property (nonatomic,weak) IBOutlet UIButton * saveButton;
+
+- (IBAction) photoButtonPushed:(id) sender;
+- (IBAction) cancelButtonPushed:(id) sender;
+- (IBAction) saveButtonPushed:(id) sender;
 
 @end

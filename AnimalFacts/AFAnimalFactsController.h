@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFAnimal.h"
 
 @interface AFAnimalFactsController : UITableViewController
 
 @property (nonatomic,strong) NSMutableArray * animals;
+@property (nonatomic,strong) AFAnimal * subject;
+@property (nonatomic,weak) IBOutlet UITableView * animalTableView;
 
 @end

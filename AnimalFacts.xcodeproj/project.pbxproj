@@ -25,10 +25,8 @@
 		2313A9C61817273600D88A22 /* Scagryn0013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C51817273600D88A22 /* Scagryn0013.jpg */; };
 		2313A9C81817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */; };
 		2338E974181998AA004490CB /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338E973181998AA004490CB /* NSFileManager+DirectoryLocations.m */; };
-		2357B132182A9F9600504CA8 /* AFAnimalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357B131182A9F9600504CA8 /* AFAnimalCell.m */; };
 		237E8C1C182A910D00BA65B2 /* AFAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237E8C1B182A910D00BA65B2 /* AFAnimalViewController.m */; };
 		23816FF3182066ED00E947B3 /* AFAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 23816FF2182066ED00E947B3 /* AFAnimal.m */; };
-		23816FF51820679000E947B3 /* AnimalDetails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23816FF41820679000E947B3 /* AnimalDetails.plist */; };
 		2387163418204EC900870F98 /* AnimalFactsStoryiPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2387163318204EC900870F98 /* AnimalFactsStoryiPhone.storyboard */; };
 		23993BAA1819575500A149FD /* 179-notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 23993BA91819575500A149FD /* 179-notepad.png */; };
 		23B33DEE1821419A00264295 /* SoldierFly.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23B33DED1821419A00264295 /* SoldierFly.jpeg */; };
@@ -69,13 +67,10 @@
 		2313A9C71817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "686px-Harpia_harpyja_-falconry_-head-8a.jpg"; sourceTree = "<group>"; };
 		2338E972181998AA004490CB /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		2338E973181998AA004490CB /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
-		2357B130182A9F9600504CA8 /* AFAnimalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalCell.h; sourceTree = "<group>"; };
-		2357B131182A9F9600504CA8 /* AFAnimalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalCell.m; sourceTree = "<group>"; };
 		237E8C1A182A910D00BA65B2 /* AFAnimalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimalViewController.h; sourceTree = "<group>"; };
 		237E8C1B182A910D00BA65B2 /* AFAnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimalViewController.m; sourceTree = "<group>"; };
 		23816FF1182066ED00E947B3 /* AFAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAnimal.h; sourceTree = "<group>"; };
 		23816FF2182066ED00E947B3 /* AFAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAnimal.m; sourceTree = "<group>"; };
-		23816FF41820679000E947B3 /* AnimalDetails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AnimalDetails.plist; sourceTree = "<group>"; };
 		2387163318204EC900870F98 /* AnimalFactsStoryiPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimalFactsStoryiPhone.storyboard; sourceTree = "<group>"; };
 		23993BA91819575500A149FD /* 179-notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "179-notepad.png"; sourceTree = "<group>"; };
 		23B33DED1821419A00264295 /* SoldierFly.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SoldierFly.jpeg; sourceTree = "<group>"; };
@@ -153,8 +148,6 @@
 				23F4DB1C1829778D00072A28 /* AFAnimalFactsController.m */,
 				237E8C1A182A910D00BA65B2 /* AFAnimalViewController.h */,
 				237E8C1B182A910D00BA65B2 /* AFAnimalViewController.m */,
-				2357B130182A9F9600504CA8 /* AFAnimalCell.h */,
-				2357B131182A9F9600504CA8 /* AFAnimalCell.m */,
 			);
 			path = AnimalFacts;
 			sourceTree = "<group>";
@@ -162,7 +155,6 @@
 		2313A9871817198E00D88A22 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				23816FF41820679000E947B3 /* AnimalDetails.plist */,
 				2313A9BE1817200300D88A22 /* Images */,
 				2313A9881817198E00D88A22 /* AnimalFacts-Info.plist */,
 				2313A9891817198E00D88A22 /* InfoPlist.strings */,
@@ -284,7 +276,6 @@
 				2313A9C21817204200D88A22 /* 161-calculator.png in Resources */,
 				2387163418204EC900870F98 /* AnimalFactsStoryiPhone.storyboard in Resources */,
 				2313A9991817198E00D88A22 /* Images.xcassets in Resources */,
-				23816FF51820679000E947B3 /* AnimalDetails.plist in Resources */,
 				2313A9C81817278B00D88A22 /* 686px-Harpia_harpyja_-falconry_-head-8a.jpg in Resources */,
 				23993BAA1819575500A149FD /* 179-notepad.png in Resources */,
 				2313A9C01817201400D88A22 /* 23-bird.png in Resources */,
@@ -315,7 +306,6 @@
 				2313A9911817198E00D88A22 /* AFAppDelegate.m in Sources */,
 				23F4DB1D1829778D00072A28 /* AFAnimalFactsController.m in Sources */,
 				2338E974181998AA004490CB /* NSFileManager+DirectoryLocations.m in Sources */,
-				2357B132182A9F9600504CA8 /* AFAnimalCell.m in Sources */,
 				23816FF3182066ED00E947B3 /* AFAnimal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
