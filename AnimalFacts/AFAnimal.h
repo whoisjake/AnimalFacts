@@ -16,6 +16,7 @@
 @property (nonatomic) NSString *imagePath;
 @property (nonatomic, strong, readonly) UIImage * image;
 
-+ (NSMutableArray*) allAnimals;
++ (NSMutableArray*) loadAnimals;
++ (void) saveAnimals: (NSMutableArray*) animals;
 
 @end

@@ -10,4 +10,6 @@
 
 @interface AFAnimalFactsController : UITableViewController
 
+@property (nonatomic,strong) NSMutableArray * animals;
+
 @end

@@ -9,6 +9,7 @@
 #import "AFAnimalFactsController.h"
 #import "AFAnimalViewController.h"
 #import "AFAnimal.h"
+#import "AFAnimalCell.h"
 
 @interface AFAnimalFactsController ()
 
@@ -28,12 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self loadAnimals];
+}
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+- (void) loadAnimals {
+    self.animals = [AFAnimal loadAnimals];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,17 +51,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [self.animals count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    AFAnimalCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor redColor];
-    // Configure the cell...
-    
+    AFAnimal * animal = self.animals[indexPath.row];
+    cell.animalNameLabel.text = animal.name;
     return cell;
 }
 
@@ -72,13 +71,10 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        [tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 

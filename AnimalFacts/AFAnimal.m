@@ -10,29 +10,25 @@
 
 @implementation AFAnimal
 
-+ (NSMutableArray*) allAnimals {
-    static dispatch_once_t onceToken;
-    static NSMutableArray * allAnimals;
-    dispatch_once(&onceToken, ^{
-        allAnimals = [[NSMutableArray alloc] init];
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"AnimalDetails" ofType:@"plist"];
-        NSMutableArray *animals = [[NSMutableArray alloc]initWithContentsOfFile:path];
-        for(NSDictionary *ad in animals) {
-            AFAnimal *animal = [[AFAnimal alloc] init];
-            [animal setValuesForKeysWithDictionary:ad];
-            [allAnimals addObject:animal];
-        }
-    });
++ (NSMutableArray*) loadAnimals {
+    NSMutableArray *allAnimals = [[NSMutableArray alloc] init];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"AnimalDetails" ofType:@"plist"];
+    NSMutableArray *animals = [[NSMutableArray alloc]initWithContentsOfFile:path];
+    for(NSDictionary *ad in animals) {
+        AFAnimal *animal = [[AFAnimal alloc] init];
+        [animal setValuesForKeysWithDictionary:ad];
+        [allAnimals addObject:animal];
+    }
     
     return allAnimals;
 }
 
-+ (NSMutableArray*) loadAnimals {
-    return [[NSMutableArray alloc] init];
++ (void) saveAnimals: (NSMutableArray *) animals {
+    
 }
 
-+ (void) saveAnimals: (NSMutableArray*) animals {
-    
+- (NSComparisonResult)compare:(AFAnimal *) otherAnimal {
+    return [self.name compare:otherAnimal.name];
 }
 
 - (UIImage*) image {
