@@ -26,6 +26,14 @@
     return self;
 }
 
+- (void) textViewDidEndEditing:(UITextView *)textView {
+    [textView resignFirstResponder];
+}
+
+- (void) textFieldDidEndEditing:(UITextField *)textField {
+    [textField resignFirstResponder];
+}
+
 - (void) setAnimal:(AFAnimal *)animal {
     _animal = animal;
     [self updateFromAnimal];
@@ -70,9 +78,16 @@
 
 - (IBAction) photoButtonPushed:(id) sender {
     UIImagePickerController *picker = [[UIImagePickerController alloc] initWithNibName:nil bundle:nil];
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    else
+    {
+        picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    }
     picker.delegate = self;
-    picker.modalPresentationStyle = UIModalPresentationCurrentContext;
+    //picker.modalPresentationStyle = UIModalPresentationCurrentContext;
     [self presentViewController:picker animated:YES completion:nil];
 }
 
