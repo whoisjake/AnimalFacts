@@ -2,7 +2,7 @@
 //  AFAnimalViewController.h
 //  AnimalFacts
 //
-//  Created by Jacob Good on 10/22/13.
+//  Created by Jacob Good on 11/6/13.
 //  Copyright (c) 2013 Jacob Good. All rights reserved.
 //
 
@@ -11,11 +11,18 @@
 
 @interface AFAnimalViewController : UIViewController
 
-@property (nonatomic, strong) AFAnimal *animal;
+@property (nonatomic,strong) AFAnimal * animal;
 
-@property (nonatomic,weak) IBOutlet UILabel *animalNameLabel;
-@property (nonatomic,weak) IBOutlet UILabel *animalSpeciesLabel;
-@property (nonatomic,weak) IBOutlet UIImageView *animalImageView;
-@property (nonatomic,weak) IBOutlet UILabel *animalFactLabel;
+@property (nonatomic,weak) IBOutlet UINavigationBar * navBar;
+@property (nonatomic,weak) IBOutlet UITextField * animalNameLabel;
+@property (nonatomic,weak) IBOutlet UITextView * animalFactTextView;
+@property (nonatomic,weak) IBOutlet UIImageView * animalImageView;
+@property (nonatomic,weak) IBOutlet UIButton * photoButton;
+@property (nonatomic,weak) IBOutlet UIButton * cancelButton;
+@property (nonatomic,weak) IBOutlet UIButton * saveButton;
+
+- (IBAction) photoButtonPushed:(id) sender;
+- (IBAction) cancelButtonPushed:(id) sender;
+- (IBAction) saveButtonPushed:(id) sender;
 
 @end

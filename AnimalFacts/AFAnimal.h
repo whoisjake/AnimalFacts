@@ -8,14 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AFAnimal : NSObject
+extern NSString * const AFAnimalSubjectSaved;
+extern NSString * const AFAnimalSubjectCancelled;
+
+extern NSString * const AFAnimalNameKey;
+extern NSString * const AFAnimalSpeciesKey;
+extern NSString * const AFAnimalFactKey;
+extern NSString * const AFAnimalImageKey;
+
+@interface AFAnimal : NSObject <NSCoding>
 
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *species;
 @property (nonatomic) NSString *fact;
-@property (nonatomic) NSString *imagePath;
-@property (nonatomic, strong, readonly) UIImage * image;
+@property (nonatomic) UIImage  *picture;
 
-+ (NSMutableArray*) allAnimals;
+- (void) savePicture;
+
++ (NSMutableArray*) loadAnimals;
++ (void) saveAnimals: (NSMutableArray*) animals;
 
 @end

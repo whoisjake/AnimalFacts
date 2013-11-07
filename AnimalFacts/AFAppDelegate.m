@@ -7,10 +7,6 @@
 //
 
 #import "AFAppDelegate.h"
-#import "AFAnimalViewController.h"
-#import "AFAnimalListViewController.h"
-#import "AFAnimalCounterViewController.h"
-#import "AFAnimalNotesViewController.h"
 
 @implementation AFAppDelegate
 
