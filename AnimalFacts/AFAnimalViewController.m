@@ -26,12 +26,14 @@
     return self;
 }
 
-- (void) textViewDidEndEditing:(UITextView *)textView {
-    [textView resignFirstResponder];
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
-- (void) textFieldDidEndEditing:(UITextField *)textField {
-    [textField resignFirstResponder];
+- (BOOL)textViewShouldReturn:(UITextView *)textView {
+    [textView resignFirstResponder];
+    return YES;
 }
 
 - (void) setAnimal:(AFAnimal *)animal {
@@ -86,8 +88,9 @@
     {
         picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     }
+    
     picker.delegate = self;
-    //picker.modalPresentationStyle = UIModalPresentationCurrentContext;
+    picker.modalPresentationStyle = UIModalPresentationCurrentContext;
     [self presentViewController:picker animated:YES completion:nil];
 }
 
@@ -102,7 +105,7 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
