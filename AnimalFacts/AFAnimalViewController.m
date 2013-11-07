@@ -79,7 +79,7 @@
 }
 
 - (IBAction) photoButtonPushed:(id) sender {
-    UIImagePickerController *picker = [[UIImagePickerController alloc] initWithNibName:nil bundle:nil];
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;

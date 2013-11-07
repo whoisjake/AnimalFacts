@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     self.animals = [AFAnimal loadAnimals];
+    [self sortAnimals];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(saveSubject:)
                                                  name:AFAnimalSubjectSaved
@@ -37,6 +38,17 @@
                                              selector:@selector(clearSubject:)
                                                  name:AFAnimalSubjectCancelled
                                                object:nil];
+}
+
+- (void) removeAnimal:(AFAnimal *) animal {
+    [self.animals removeObject:animal];
+    [self sortAnimals];
+}
+
+- (void) sortAnimals {
+    NSArray *sortedArray;
+    sortedArray = [self.animals sortedArrayUsingSelector:@selector(compare:)];
+    self.animals = [(NSArray*)sortedArray mutableCopy];
 }
 
 - (void) saveAnimals {
@@ -49,7 +61,10 @@
 
 - (void) saveSubject:(id) sender {
     if (self.subject != nil) {
-        [self.animals addObject:self.subject];
+        if (![self.animals containsObject:self.subject]) {
+            [self.animals addObject:self.subject];
+            [self sortAnimals];
+        }
         [self saveAnimals];
         [self.animalTableView reloadData];
     }
@@ -96,8 +111,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.animals removeObjectAtIndex:indexPath.row];
-        [self saveAnimals];
+        AFAnimal * animal = [self.animals objectAtIndex:indexPath.row];
+        [self removeAnimal:animal];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
