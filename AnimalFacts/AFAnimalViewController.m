@@ -101,6 +101,7 @@
 {
     UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
     self.animalImageView.image = image;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
